@@ -4,10 +4,12 @@ export class Chess{
 
     private table: Piece[];
     private turn: boolean;
+    private finished: boolean;
 
     constructor(){
 
         this.turn = false;
+        this.finished = false;
         this.table = new Array<Piece>(64);
         const beginCodes: number[] = [4, 2, 3, 5, 6, 3, 2, 4];
 
